@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT</title>
+<!-- CSS only -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/main.css" type="text/css">
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/jquery-ui.min.js"></script>
+  </head>
+<body>
+
+<div class="top-container">
+  <div id="tooltip"></div>
+</div>
+
+
+<!-- Body text -->
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-7 col-12 text-center">
+      <p class="graphic-title">Top 20 characters in male given names</p>
+    </div>
+    <div class="col-lg-7 col-12">
+      <ul class="legend">
+        <li style = "background-color: rgb(81, 49, 0);"></li>
+        <li style = "background-color: rgb(130, 104, 40);"></li>
+        <li style = "background-color: rgb(180, 160, 116);"></li>
+        <li style = "background-color: rgb(231, 216, 193);"></li>
+        <li style = "background-color: rgb(255, 243, 229);"></li>
+      </ul>
+    </div>
+
+    <div id="male-chart" class="hidden-xs-down"></div>
+    <div class="col-sm-12 image hidden-sm-up">
+      <img src="./assets/images/hannames-male.svg" alt="male">
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-7 col-12 text-center">
+      <p class="graphic-title up">Top 20 characters in female given names</p>
+    </div>
+    <div class="col-lg-7 col-12">
+      <ul class="legend">
+        <li style = "background-color: rgb(133, 21, 1);"></li>
+        <li style = "background-color: rgb(145, 72, 57);"></li>
+        <li style = "background-color: rgb(176, 123, 112);"></li>
+        <li style = "background-color: rgb(208, 174, 167);"></li>
+        <li style = "background-color: rgb(240, 225, 223);"></li>
+      </ul>
+    </div>
+
+    <div id="female-chart" class="hidden-xs-down"></div>
+    <div class="col-sm-12 image hidden-sm-up">
+      <img src="./assets/images/hannames-female.svg" alt="female">
+    </div>
+  </div>
+</div>
+
+
+<!-- Footage -->
+<div class="container">
+  <!-- D3 library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <!-- Visualization file-->
+  <script src="charts/male-chart.js"></script>
+  <script src="charts/female-chart.js"></script>
+
+</div>
+</body>
+</html>
